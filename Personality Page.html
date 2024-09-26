@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00BF63;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .header-left {
+            display: flex;
+            align-items: center; 
+        }
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: white;
+            margin-right: 20px; 
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            margin-left: auto;
+        }
+        
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav a {
+            color: #00BF63;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ffffff;
+            color: #007544;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .trait {
+            flex: 1;
+            margin-right: 20px;
+            border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .main-section {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero {
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero-video {
+            width: 100%;
+            max-width: 400px; 
+            height: auto;
+            border-radius: 10px;
+        }
+
+        
+        .quote-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            font-style: italic;
+            font-size: 12px; 
+            max-width: 180px; 
+        }
+
+        .personality {
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center; 
+        }
+
+        .personality img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+        }
+
+        .footer {
+            background-color: #00BF63;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1><strong>PERSONALITY WEBPAGE</strong></h1>
+            <nav> 
+                <a href="Personal Development Page.html">Personal Dev</a>
+                <a href="Storyboard Page.html">Storyboard</a>
+                <a href="Reference Page.html">Reference</a>
+                <a href="Index Page.html">Index</a>
+                <a href="Professional Page.html">Professional</a> 
+            </nav>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/teecha.og" target="_blank">
+                <img src="../Assets/logo-search-grid-1x%20(1).png" alt="Top Notch" class="logo">
+            </a>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="main-section">
+            <div class="trait">
+                <h2>TRAITS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
+                <p>Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.</p>
+            </div>
+        
+            <div class="hero">
+                <h2>MY HERO</h2>
+
+               
+                <div class="quote-box">
+                    <p>"Meddling When You Don't Need To...Is The Essence Of Being A Hero." All Might</p>
+                </div>
+                
+                <video class="hero-video" controls>
+                    <source src="../Assets/This is What it Takes to be Number One.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <p>All Might from My Hero Academia is my personal hero because of his unwavering dedication to protecting others and inspiring hope. Despite his immense power, he always leads with compassion, believing that a true hero not only saves lives but lifts others up. His humility and determination, even in his weakest moments, show that true strength lies in one's heart. As a mentor, All Might teaches that anyone can be a hero, and his ability to inspire greatness in others is what makes him my hero.</p>
+                
+                <h3>Listen to this Audio:</h3>
+                <audio controls>
+                    <source src="../Assets/MyHero.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="personality">
+                <h2>PERSONALITY TOOL</h2>
+                <img src="../Assets\Screenshot 2024-09-26 110609.png" alt="Skills Image">
+                <p>INTP Traits: They are logical, sceptical, cognitive, detached, theoretical, reserved, precise, independent, speculative, original, autonomous and self-sufficient. </p>
+                <p>Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>SOCIALS</p>
+    </div>
+
+</body>
+</html>
